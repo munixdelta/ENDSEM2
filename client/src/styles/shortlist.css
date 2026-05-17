@@ -1,0 +1,80 @@
+.shortlist-page {
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab-btn:hover {
+  color: var(--primary-color);
+}
+
+.tab-btn.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+}
+
+.matching-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.candidate-match-item {
+  background-color: var(--body-bg);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.ai-report-body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+}
+
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.saved-item {
+  padding: 16px;
+  background-color: var(--body-bg);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.saved-item:hover {
+  border-color: var(--primary-color);
+}
+
+.saved-item.active {
+  background-color: rgba(67, 97, 238, 0.05);
+  border-color: var(--primary-color);
+}
